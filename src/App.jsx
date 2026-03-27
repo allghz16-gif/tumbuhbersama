@@ -3,7 +3,6 @@ import Dhika from "./Dhika.jsx";
 import Zaki from "./Zaki.jsx";
 import James from "./James.jsx";
 import Hapiz from "./Hapiz.jsx";
-import ain from "./main.jsx";
 
 function App() {
   return (
