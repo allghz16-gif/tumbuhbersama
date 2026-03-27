@@ -11,7 +11,6 @@ function App() {
         <Route path="/dhika-alghazali" element={<Dhika />} />
         <Route path="/rifqi-ardhian" element={<Zaki />} />
         <Route path="/ahmad-akbar" element={<Hapiz />} />
-        <Route path="/rifqi-ardhian" element={<main />} />
         <Route path="/ahmad-akbar" element={<James />} />
       </Routes>
     </BrowserRouter>
