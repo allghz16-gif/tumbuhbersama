@@ -1,4 +1,7 @@
+import App from './App.jsx'
+
 function Zaki() {
+
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-96 text-center">

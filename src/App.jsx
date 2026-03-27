@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Dhika from "./pages/Dhika";
-import Zaki from "./pages/Zaki";
-import James from "./pages/James";
-import Hapiz from "./pages/Hapiz";
+import Dhika from "./Dhika.jsx"; 
+import Zaki from "./Zaki.jsx";
+import James from "./James.jsx";
+import Hapiz from "./Hapiz.jsx";
 
 function App() {
   return (
