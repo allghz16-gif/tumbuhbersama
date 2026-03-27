@@ -21,7 +21,7 @@ const Home = () => {
             </div>
           </div>
           
-          <h2 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Profil Dhika</h2>
+          <h2 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Profil Zaki</h2>
           <p className="text-slate-500 mt-2">Klik untuk melihat detail profil</p>
         </Link>
 
