@@ -1,42 +1,36 @@
-import React from 'react';
-
-const Dhika = () => {
+const Zaki = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-6 sm:p-10 flex flex-col items-center">
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] max-w-2xl w-full border border-slate-100 transform transition-all hover:scale-[1.01]">
         
-        {/* Foto Profil dan Nama */}
+
         <div className="flex flex-col items-center text-center mb-10">
           <div className="relative mb-6">
             <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
-               {/* Atribut src sudah diisi ke /ghz.png */}
                <img 
-                 src="/ghz.png" 
-                 alt="Foto Profil Dhika" 
-                 className="w-full h-full object-cover"
-                 onError={(e) => e.target.src="https://via.placeholder.com/150"} 
-               />
+               src="././public/fotozakifix.png" 
+               alt="Foto Profil Zaki" 
+               className="w-full h-full object-cover"/>
             </div>
             <div className="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">Andhika Ahmad Ghazali</h1>
-          <p className="text-xl text-blue-600 font-medium">Creative Developer & Digital Innovator</p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">Muktabar Zaki Pramana Wibisono</h1>
+          <p className="text-xl text-indigo-600 font-medium">Software Engineer & Tech Enthusiast</p>
         </div>
 
-        {/* Data Diri dengan Icons (Wajib sesuai instruksi tugas) */}
         <div className="border-t border-slate-100 pt-10 mb-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
-              <span className="w-2 h-7 bg-blue-600 rounded-full mr-4 mb-1"></span>
+              <span className="w-2 h-7 bg-indigo-600 rounded-full mr-4 mb-1"></span>
               Informasi Pribadi
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { label: 'Kelas', value: 'T2C', icon: 'school' },
-              { label: 'Prodi', value: 'Teknolosi Informasi', icon: 'book' },
-              { label: 'Domisili', value: 'Kota Tangerang', icon: 'map-pin' }
+              { label: 'Prodi', value: 'Teknologi Informasi', icon: 'book' },
+              { label: 'Domisili', value: 'Kota Bogor', icon: 'map-pin' }
             ].map((item, index) => (
               <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-center space-x-5 transition hover:bg-white hover:shadow-md">
-                <div className={`p-3.5 rounded-xl text-white ${index % 3 === 0 ? 'bg-blue-600' : index % 3 === 1 ? 'bg-indigo-600' : 'bg-sky-600'}`}>
+                <div className={`p-3.5 rounded-xl text-white ${index % 3 === 0 ? 'bg-indigo-600' : index % 3 === 1 ? 'bg-blue-600' : 'bg-sky-600'}`}>
                     {item.icon === 'school' && <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>}
                     {item.icon === 'book' && <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.132 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.132 1.253"></path></svg>}
                     {item.icon === 'map-pin' && <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>}
@@ -50,35 +44,41 @@ const Dhika = () => {
           </div>
         </div>
 
-        {/* Tentang Diri (Minimal 100 Kata sesuai kriteria penilaian) */}
+
         <div className="border-t border-slate-100 pt-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
-            <span className="w-2 h-7 bg-indigo-600 rounded-full mr-4 mb-1"></span>
+            <span className="w-2 h-7 bg-blue-600 rounded-full mr-4 mb-1"></span>
             Tentang Diri
           </h2>
-          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100 shadow-inner">
-            <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-indigo-600 first-letter:mr-3 first-letter:float-left">
-              Halo, nama saya adalah Dhika. Saya merupakan seorang mahasiswa yang memiliki ketertarikan mendalam dalam dunia pengembangan teknologi, khususnya dalam membangun aplikasi web menggunakan ekosistem modern seperti ReactJS dan Tailwind CSS. Melalui tugas project implementasi kelompok ini, saya berkesempatan untuk mengasah kemampuan kolaborasi tim menggunakan Git dan GitHub secara profesional. Saya sangat percaya bahwa solusi digital yang baik lahir dari kerja sama tim yang solid serta pemahaman logika pemrograman yang kuat. Motivasi terbesar saya saat ini adalah terus belajar mengeksplorasi berbagai framework dan library baru untuk menciptakan antarmuka pengguna yang fungsional sekaligus estetik. Selain fokus pada perkuliahan akademik, saya juga aktif berpartisipasi dalam komunitas teknologi lokal untuk mengembangkan keterampilan komunikasi dan kepemimpinan saya agar siap menghadapi tantangan di industri perangkat lunak yang sangat dinamis di masa depan nanti.
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-blue-50/50 p-8 rounded-2xl border border-blue-100 shadow-inner">
+            <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-blue-600 first-letter:mr-3 first-letter:float-left">
+              Halo, nama saya adalah Zaki. Saya merupakan seorang mahasiswa yang memiliki ketertarikan mendalam dalam dunia pengembangan teknologi, khususnya dalam membangun aplikasi web menggunakan ekosistem JavaScript dan ReactJS. Melalui tugas project implementasi ini, saya berkesempatan untuk mengasah kemampuan kolaborasi tim menggunakan Git dan GitHub secara profesional. Saya percaya bahwa teknologi digital memiliki potensi besar untuk memberikan solusi nyata bagi permasalahan di masyarakat luas. Motivasi utama saya adalah terus belajar dan beradaptasi dengan kerangka kerja modern seperti Tailwind CSS untuk menciptakan antarmuka pengguna yang fungsional sekaligus estetik. Selain fokus pada akademik, saya juga senang mengeksplorasi tren teknologi terbaru dan berpartisipasi dalam komunitas untuk memperluas jaringan serta wawasan saya di industri perangkat lunak yang dinamis ini. Saya berkomitmen untuk memberikan kontribusi terbaik dalam setiap proyek yang saya kerjakan bersama tim.
+            </p>
+          </div>
+          <br />
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-green p-8 rounded-2xl border border-blue-100 shadow-inner">
+            <p>
+              Pengalaman saya didunia kerja saya pernah menjadi IT Spesialist di dua perusahaan, yang pertama PT. Pertamina Hulu Rokan di Pali, Sumatera Selatan, dan juga saya pernah 
+              magang di PT Heavenly Nutrition Indonesia, Sentul Selatan, Jawa Barat. Selama saya magang saya berfokus pada IT Spesialist seperti: Pemasangan jaringan, maintanance jaringan, dan juga IT Support.
             </p>
           </div>
         </div>
 
-        {/* Tombol Kontak (Optional) */}
+        {/* Tombol Aksi */}
         <div className="mt-12 text-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-blue-200">
-            Hubungi Dhika
+          <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-indigo-200">
+            Hubungi Zaki
           </button>
         </div>
 
       </div>
 
-      {/* Footer Sesuai Tagline Tim */}
       <footer className="mt-16 text-center text-slate-400">
-        <p>&copy; {new Date().getFullYear()} Dhika. All rights reserved.</p>
-        <p className="text-sm mt-1 uppercase tracking-widest italic">Building Up Noble Future</p>
+        <p>&copy; {new Date().getFullYear()} Zaki. All rights reserved.</p>
+        <p className="text-sm mt-1">Universitas Brawijaya - Building Up Noble Future</p>
       </footer>
     </div>
   );
 };
 
-export default Dhika;
+export default Zaki;
