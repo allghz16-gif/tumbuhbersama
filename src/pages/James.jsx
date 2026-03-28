@@ -9,7 +9,11 @@ const James = () => {
           <div className="relative mb-6">
             <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
                {/* Ganti dengan <img src="/path/to/your/photo.jpg" alt="Foto Profil" className="w-full h-full object-cover"/> */}
-               <span className="text-7xl font-bold text-blue-300">D</span>
+              <img
+              src="/profil.jpeg"
+              alt="Foto Profil" 
+              className="w-full h-full object-cover"
+              /> 
             </div>
             {/* Status Indicator (Optional) */}
             <div className="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
