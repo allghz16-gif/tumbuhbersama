@@ -14,7 +14,7 @@ const James = () => {
             {/* Status Indicator (Optional) */}
             <div className="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">Nama Lengkap</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">James Martyno Susanto</h1>
           <p className="text-xl text-blue-600 font-medium">Creative Developer & Digital Innovator</p>
         </div>
 
@@ -53,7 +53,7 @@ const James = () => {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100">
             <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-indigo-600 first-letter:mr-3 first-letter:float-left">
-              Halo, nama saya adalah... Teks ini harus memiliki minimal 100 kata untuk memenuhi instruksi tugas. Di sini, saya akan menjelaskan lebih lanjut tentang minat saya dalam pengembangan perangkat lunak, pengalaman dalam berbagai proyek, serta motivasi saya untuk terus belajar dan tumbuh di industri teknologi. Saya bersemangat dalam menjelajahi berbagai bahasa pemrograman, kerangka kerja, dan alat baru untuk menciptakan solusi yang efisien dan estetis. Selain itu, saya juga aktif dalam organisasi mahasiswa dan komunitas lokal untuk mengembangkan keterampilan kolaborasi dan kepemimpinan saya. (Lanjutkan tulisan ini hingga mencapai target minimal 100 kata sesuai instruksi yang diberikan).
+              Halo, nama saya adalah James Martyno Susanto Di sini, saya akan menjelaskan lebih lanjut tentang minat saya dalam pengembangan perangkat lunak, pengalaman dalam berbagai proyek, serta motivasi saya untuk terus belajar dan tumbuh di industri teknologi. Saya bersemangat dalam menjelajahi berbagai bahasa pemrograman, kerangka kerja, dan alat baru untuk menciptakan solusi yang efisien dan estetis. Selain itu, saya juga aktif dalam organisasi mahasiswa dan komunitas lokal untuk mengembangkan keterampilan kolaborasi dan kepemimpinan saya. (Lanjutkan tulisan ini hingga mencapai target minimal 100 kata sesuai instruksi yang diberikan).
             </p>
           </div>
         </div>
