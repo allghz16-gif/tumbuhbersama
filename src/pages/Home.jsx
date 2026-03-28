@@ -17,16 +17,16 @@ const Home = () => {
           {/* Box Ikon yang dikunci ukurannya */}
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-               <span className="text-white font-bold text-2xl tracking-tighter">D</span>
+               <span className="text-white font-bold text-2xl tracking-tighter">J</span>
             </div>
           </div>
           
-          <h2 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Profil Dhika</h2>
+          <h2 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Profil James</h2>
           <p className="text-slate-500 mt-2">Klik untuk melihat detail profil</p>
         </Link>
 
         <footer className="mt-12 text-slate-600 text-xs italic uppercase">
-          Building Up Noble Future
+          Vokasi UB (Teknologi Informasi)
         </footer>
       </div>
     </div>
