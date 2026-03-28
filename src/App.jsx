@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Dhika from "./pages/Dhika";
+import James from "./pages/James";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dhika" element={<Dhika />} />
+        <Route path="/james" element={<James />} />
       </Routes>
     </BrowserRouter>
   );
