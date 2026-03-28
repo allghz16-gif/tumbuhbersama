@@ -30,9 +30,9 @@ const James = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { label: 'Kelas', value: '[Isi Kelas]', icon: 'school' },
-              { label: 'Prodi', value: '[Isi Jurusan]', icon: 'book' },
-              { label: 'Domisili', value: '[Isi Kota]', icon: 'map-pin' }
+              { label: 'Kelas', value: '[T2C]', icon: 'school' },
+              { label: 'Prodi', value: '[Teknologi Informasi]', icon: 'book' },
+              { label: 'Domisili', value: '[Kota Kediri]', icon: 'map-pin' }
             ].map((item, index) => (
               <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-center space-x-5 transition hover:bg-white hover:shadow-md">
                 <div className={`p-3.5 rounded-xl text-white ${index % 3 === 0 ? 'bg-blue-600' : index % 3 === 1 ? 'bg-indigo-600' : 'bg-sky-600'}`}>
@@ -53,7 +53,7 @@ const James = () => {
         <div className="border-t border-slate-100 pt-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
             <span className="w-2 h-7 bg-indigo-600 rounded-full mr-4 mb-1"></span>
-            Tentang Diri
+            Tentang Diri James
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100">
             <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-indigo-600 first-letter:mr-3 first-letter:float-left">
@@ -73,7 +73,7 @@ const James = () => {
 
       {/* Footer / Contact (Optional) */}
       <footer className="mt-16 text-center text-slate-400">
-        <p>&copy; {new Date().getFullYear()} Dhika. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} James. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
             <a href="#" className="hover:text-slate-900">GitHub</a>
             <a href="#" className="hover:text-blue-600">LinkedIn</a>
