@@ -1,3 +1,4 @@
+import React from 'react';
 
 const Dhika = () => {
   return (
@@ -8,17 +9,21 @@ const Dhika = () => {
         <div className="flex flex-col items-center text-center mb-10">
           <div className="relative mb-6">
             <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
-               {/* Ganti dengan <img src="/path/to/your/photo.jpg" alt="Foto Profil" className="w-full h-full object-cover"/> */}
-               <span className="text-7xl font-bold text-blue-300">D</span>
+               {/* Atribut src sudah diisi ke /ghz.png */}
+               <img 
+                 src="/ghz.png" 
+                 alt="Foto Profil Dhika" 
+                 className="w-full h-full object-cover"
+                 onError={(e) => e.target.src="https://via.placeholder.com/150"} 
+               />
             </div>
-            {/* Status Indicator (Optional) */}
             <div className="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">Nama Lengkap</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 mb-1">Andhika Ahmad Ghazali</h1>
           <p className="text-xl text-blue-600 font-medium">Creative Developer & Digital Innovator</p>
         </div>
 
-        {/* Data Diri dengan Icons */}
+        {/* Data Diri dengan Icons (Wajib sesuai instruksi tugas) */}
         <div className="border-t border-slate-100 pt-10 mb-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
               <span className="w-2 h-7 bg-blue-600 rounded-full mr-4 mb-1"></span>
@@ -26,9 +31,9 @@ const Dhika = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { label: 'Kelas', value: '[Isi Kelas]', icon: 'school' },
-              { label: 'Prodi', value: '[Isi Jurusan]', icon: 'book' },
-              { label: 'Domisili', value: '[Isi Kota]', icon: 'map-pin' }
+              { label: 'Kelas', value: 'T2C', icon: 'school' },
+              { label: 'Prodi', value: 'Teknolosi Informasi', icon: 'book' },
+              { label: 'Domisili', value: 'Kota Tangerang', icon: 'map-pin' }
             ].map((item, index) => (
               <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-center space-x-5 transition hover:bg-white hover:shadow-md">
                 <div className={`p-3.5 rounded-xl text-white ${index % 3 === 0 ? 'bg-blue-600' : index % 3 === 1 ? 'bg-indigo-600' : 'bg-sky-600'}`}>
@@ -45,36 +50,32 @@ const Dhika = () => {
           </div>
         </div>
 
-        {/* Tentang Diri (Min 100 Kata) */}
+        {/* Tentang Diri (Minimal 100 Kata sesuai kriteria penilaian) */}
         <div className="border-t border-slate-100 pt-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
             <span className="w-2 h-7 bg-indigo-600 rounded-full mr-4 mb-1"></span>
             Tentang Diri
           </h2>
-          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100">
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100 shadow-inner">
             <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-indigo-600 first-letter:mr-3 first-letter:float-left">
-              Halo, nama saya adalah... Teks ini harus memiliki minimal 100 kata untuk memenuhi instruksi tugas. Di sini, saya akan menjelaskan lebih lanjut tentang minat saya dalam pengembangan perangkat lunak, pengalaman dalam berbagai proyek, serta motivasi saya untuk terus belajar dan tumbuh di industri teknologi. Saya bersemangat dalam menjelajahi berbagai bahasa pemrograman, kerangka kerja, dan alat baru untuk menciptakan solusi yang efisien dan estetis. Selain itu, saya juga aktif dalam organisasi mahasiswa dan komunitas lokal untuk mengembangkan keterampilan kolaborasi dan kepemimpinan saya. (Lanjutkan tulisan ini hingga mencapai target minimal 100 kata sesuai instruksi yang diberikan).
+              Halo, nama saya adalah Dhika. Saya merupakan seorang mahasiswa yang memiliki ketertarikan mendalam dalam dunia pengembangan teknologi, khususnya dalam membangun aplikasi web menggunakan ekosistem modern seperti ReactJS dan Tailwind CSS. Melalui tugas project implementasi kelompok ini, saya berkesempatan untuk mengasah kemampuan kolaborasi tim menggunakan Git dan GitHub secara profesional. Saya sangat percaya bahwa solusi digital yang baik lahir dari kerja sama tim yang solid serta pemahaman logika pemrograman yang kuat. Motivasi terbesar saya saat ini adalah terus belajar mengeksplorasi berbagai framework dan library baru untuk menciptakan antarmuka pengguna yang fungsional sekaligus estetik. Selain fokus pada perkuliahan akademik, saya juga aktif berpartisipasi dalam komunitas teknologi lokal untuk mengembangkan keterampilan komunikasi dan kepemimpinan saya agar siap menghadapi tantangan di industri perangkat lunak yang sangat dinamis di masa depan nanti.
             </p>
           </div>
         </div>
 
-        {/* Tombol Aksi (Optional) */}
+        {/* Tombol Kontak (Optional) */}
         <div className="mt-12 text-center">
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-blue-200">
-            Hubungi Saya
+            Hubungi Dhika
           </button>
         </div>
 
       </div>
 
-      {/* Footer / Contact (Optional) */}
+      {/* Footer Sesuai Tagline Tim */}
       <footer className="mt-16 text-center text-slate-400">
         <p>&copy; {new Date().getFullYear()} Dhika. All rights reserved.</p>
-        <div className="mt-4 flex justify-center space-x-6">
-            <a href="#" className="hover:text-slate-900">GitHub</a>
-            <a href="#" className="hover:text-blue-600">LinkedIn</a>
-            <a href="#" className="hover:text-pink-600">Instagram</a>
-        </div>
+        <p className="text-sm mt-1 uppercase tracking-widest italic">Building Up Noble Future</p>
       </footer>
     </div>
   );
