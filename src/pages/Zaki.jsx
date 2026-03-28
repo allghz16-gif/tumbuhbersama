@@ -3,12 +3,14 @@ const Zaki = () => {
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-6 sm:p-10 flex flex-col items-center">
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] max-w-2xl w-full border border-slate-100 transform transition-all hover:scale-[1.01]">
         
-        {/* Foto Profil dan Nama */}
+
         <div className="flex flex-col items-center text-center mb-10">
           <div className="relative mb-6">
             <div className="w-40 h-40 bg-slate-100 rounded-full overflow-hidden border-4 border-white shadow-xl flex items-center justify-center">
-               {/* Ganti dengan <img src="/path/to/your/photo.jpg" alt="Foto Profil Zaki" className="w-full h-full object-cover"/> */}
-               <span className="text-7xl font-bold text-indigo-300">Z</span>
+               <img 
+               src="././public/fotozakifix.png" 
+               alt="Foto Profil Zaki" 
+               className="w-full h-full object-cover"/>
             </div>
             <div className="absolute bottom-1 right-1 w-7 h-7 bg-green-500 rounded-full border-4 border-white shadow-md"></div>
           </div>
@@ -16,7 +18,6 @@ const Zaki = () => {
           <p className="text-xl text-indigo-600 font-medium">Software Engineer & Tech Enthusiast</p>
         </div>
 
-        {/* Data Diri (Sesuai Instruksi Tugas) */}
         <div className="border-t border-slate-100 pt-10 mb-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
               <span className="w-2 h-7 bg-indigo-600 rounded-full mr-4 mb-1"></span>
@@ -24,9 +25,9 @@ const Zaki = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { label: 'Kelas', value: '[Isi Kelas]', icon: 'school' },
-              { label: 'Prodi', value: '[Isi Jurusan]', icon: 'book' },
-              { label: 'Domisili', value: '[Isi Kota]', icon: 'map-pin' }
+              { label: 'Kelas', value: 'T2C', icon: 'school' },
+              { label: 'Prodi', value: 'Teknologi Informasi', icon: 'book' },
+              { label: 'Domisili', value: 'Kota Bogor', icon: 'map-pin' }
             ].map((item, index) => (
               <div key={index} className="bg-slate-50 p-6 rounded-xl border border-slate-100 flex items-center space-x-5 transition hover:bg-white hover:shadow-md">
                 <div className={`p-3.5 rounded-xl text-white ${index % 3 === 0 ? 'bg-indigo-600' : index % 3 === 1 ? 'bg-blue-600' : 'bg-sky-600'}`}>
@@ -43,7 +44,7 @@ const Zaki = () => {
           </div>
         </div>
 
-        {/* Tentang Diri (Min 100 Kata sesuai instruksi poin 44) */}
+
         <div className="border-t border-slate-100 pt-10">
           <h2 className="text-2xl font-bold mb-6 text-slate-950 flex items-center">
             <span className="w-2 h-7 bg-blue-600 rounded-full mr-4 mb-1"></span>
@@ -52,6 +53,13 @@ const Zaki = () => {
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-blue-50/50 p-8 rounded-2xl border border-blue-100 shadow-inner">
             <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-blue-600 first-letter:mr-3 first-letter:float-left">
               Halo, nama saya adalah Zaki. Saya merupakan seorang mahasiswa yang memiliki ketertarikan mendalam dalam dunia pengembangan teknologi, khususnya dalam membangun aplikasi web menggunakan ekosistem JavaScript dan ReactJS. Melalui tugas project implementasi ini, saya berkesempatan untuk mengasah kemampuan kolaborasi tim menggunakan Git dan GitHub secara profesional. Saya percaya bahwa teknologi digital memiliki potensi besar untuk memberikan solusi nyata bagi permasalahan di masyarakat luas. Motivasi utama saya adalah terus belajar dan beradaptasi dengan kerangka kerja modern seperti Tailwind CSS untuk menciptakan antarmuka pengguna yang fungsional sekaligus estetik. Selain fokus pada akademik, saya juga senang mengeksplorasi tren teknologi terbaru dan berpartisipasi dalam komunitas untuk memperluas jaringan serta wawasan saya di industri perangkat lunak yang dinamis ini. Saya berkomitmen untuk memberikan kontribusi terbaik dalam setiap proyek yang saya kerjakan bersama tim.
+            </p>
+          </div>
+          <br />
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed text-justify bg-green p-8 rounded-2xl border border-blue-100 shadow-inner">
+            <p>
+              Pengalaman saya didunia kerja saya pernah menjadi IT Spesialist di dua perusahaan, yang pertama PT. Pertamina Hulu Rokan di Pali, Sumatera Selatan, dan juga saya pernah 
+              magang di PT Heavenly Nutrition Indonesia, Sentul Selatan, Jawa Barat. Selama saya magang saya berfokus pada IT Spesialist seperti: Pemasangan jaringan, maintanance jaringan, dan juga IT Support.
             </p>
           </div>
         </div>

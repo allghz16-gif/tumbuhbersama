@@ -33,9 +33,9 @@ const Home = () => {
         >
           <div className="flex items-center justify-center space-x-4">
             <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-sm">D</span>
+                <span className="text-white font-bold text-sm">Z</span>
             </div>
-            <h2 className="text-lg font-bold text-white group-hover:text-blue-400">Profil Dhika</h2>
+            <h2 className="text-lg font-bold text-white group-hover:text-blue-400">Profil Zaki</h2>
           </div>
         </Link>
 
